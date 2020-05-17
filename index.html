@@ -8,8 +8,20 @@
     <div>
       <h1>kakva je situacija</h1>
       <h2>Edin</h2>
+      <button class="btn">Click me</button>
+      <button class="btn">Click me</button>
+      <button class="btn">Click me</button>
+      <button class="btn">Click me</button>
+      <button class="btn">Click me</button>
+      <button class="btn">Click me</button>
 
-      <button onclick="alert('this is inline java')">Click me</button>
+      <script>
+        document.querySelectorAll(".btn").forEach((item) => {
+          item.addEventListener("click", () => {
+            alert("this is allert from all buttons");
+          });
+        });
+      </script>
     </div>
   </body>
 </html>
