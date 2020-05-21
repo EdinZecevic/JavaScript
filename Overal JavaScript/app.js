@@ -54,7 +54,7 @@ console.log(friends[0]);
 let bestFriend = friends[2];
 console.log(bestFriend);*/
 
-let name = "Sinan";
+/*let name = "Sinan";
 
 function helloWorld(name) {
   console.log("Ko je " + name);
@@ -62,11 +62,107 @@ function helloWorld(name) {
 
 function calculator(num1, num2) {
   sum = num1 + num2;
-  div = num1 - num2;
-  tim = num1 * num2;
-  del = num1 / num2;
-
   return sum;
 }
 const resault = calculator(4, 5);
-console.log(resault);
+console.log(resault);*/
+
+/*const pants = function add(n, n) {
+  let result = n + n;
+  return result;
+};
+
+let result = pants(2, 2);
+
+console.log(result);*/
+
+//OBJECTS
+
+/*const person = {
+  name: "Edin",
+  lastName: "Zecevic",
+  age: 25,
+  education: true,
+  married: false,
+  siblings: ["sister", "brother"],
+  greeting: function () {
+    console.log("Hello my name is Edin");
+  },
+};
+
+console.log(person.siblings[1]);
+person.greeting();
+
+//CONDITIONS
+
+n1 = 4;
+n2 = 5;
+
+if (n1 < n2) {
+  console.log("First is smaller than second");
+} else console.log("Second is smaller than first");
+
+const value = true;
+const value2 = false;
+
+if (value2) {
+  console.log("True");
+} else console.log("False");*/
+
+/*let n1 = 5;
+let n2 = 5;
+let value = 5 == "5";
+let value2 = 5 === "5";
+
+console.log(value);
+console.log(value2);*/
+
+//SWITCH STATEMENT
+
+/*let dice = 3;
+
+switch (dice) {
+  case 1:
+    console.log("you got one");
+    break;
+  case 2:
+    console.log("you got two");
+    break;
+  case 3:
+    console.log("you got three");
+    break;
+  default:
+    console.log("Did not correct");
+    break;
+}*/
+
+/*if (dice === 1) {
+  console.log("You have one");
+} else if (doce === 2) {
+  console.log("You have two");
+} else {
+  console.log("Did not correct");
+}*/
+
+//WHILE LOOPS
+
+/*let amount = 10;
+
+while (amount > 0) {
+  console.log("I have " + amount + " dollars");
+  amount--;
+}
+*/
+
+/*let money = 12;
+
+do {
+  console.log("I have " + money + " dollars");
+  money++;
+} while (money <= 10);*/
+
+//FOR LOOPS
+
+for (let i = 0; i < 10; i++) {
+  console.log(i);
+}
