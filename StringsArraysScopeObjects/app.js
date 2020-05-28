@@ -1,4 +1,4 @@
-let text = "Edin Zecevic";
+/*let text = "Edin Zecevic";
 
 console.log(text);
 
@@ -25,4 +25,21 @@ console.log(text.endsWith("c"));
 console.log(text.toLocaleLowerCase().startsWith("edin"));
 
 console.log(text.slice(0, 7));
-console.log(text.slice(-5)); //from behind 5 letters places
+console.log(text.slice(-5));*/ //from behind 5 letters places
+
+/*const name = "Edin";
+const age = 25;
+const sentence = "Hey here is " + name + " and have " + age + " years";
+
+console.log(sentence);
+
+const value = `hey here is ${name} and have ${age} years`;
+
+console.log(value);*/
+
+let names = ["Edin", "Sinan", "Sakic", "Husnija", "Hasib", "Kaknjo"];
+
+console.log(names.length);
+console.log(names[4]);
+console.log(names);
+console
