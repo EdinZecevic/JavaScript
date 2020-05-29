@@ -37,9 +37,44 @@ const value = `hey here is ${name} and have ${age} years`;
 
 console.log(value);*/
 
-let names = ["Edin", "Sinan", "Sakic", "Husnija", "Hasib", "Kaknjo"];
+//let namess = ["Kum", "Eldar", "Vedad", "Namik", "Muhso", "Muva"];
 
-console.log(names.length);
+/*console.log(names.length);
 console.log(names[4]);
-console.log(names);
-console
+console.log(names);*/
+
+/*let newArr = [];
+
+for (let i = 0; i < names.length; i++) {
+  newArr[i] = names[i];
+}
+
+console.log(newArr);*/
+
+/*function test(arr) {
+  console.log(arr);
+}
+
+test(names);*/
+
+/*let names = ["Edin", "Sinan", "Sakic", "Husnija", "Hasib", "Kaknjo"];
+let name = ["Edin"];
+
+function test(arr) {
+  let newArr = [];
+  for (let i = 0; i < arr.length; i++) {
+    let newItem = `${arr[i]} Zecevic`;
+
+    newArr.push(newItem);
+  }
+
+  if (newArr.length > 2) {
+    console.log(newArr);
+  } else console.log("Small Array");
+}
+
+test(names);*/
+
+let value = 2 < 5;
+
+value ? console.log("true") : console.log("false");
