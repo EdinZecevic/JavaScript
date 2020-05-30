@@ -75,6 +75,83 @@ function test(arr) {
 
 test(names);*/
 
-let value = 2 < 5;
+/*let value = 2 < 5;
 
-value ? console.log("true") : console.log("false");
+value ? console.log("true") : console.log("false");*/
+
+//Call back Functions//
+
+/*function calculator(arr, cb) {
+  let array = [];
+  for (let i = 0; i < arr.length; i++) {
+    let item = cb(arr[i]);
+    array.push(item);
+  }
+  return array;
+}
+
+function add(number) {
+  return number + 10;
+}
+
+function multipy(number) {
+  return number * 10;
+}
+
+let result = calculator([1, 2, 3], add);
+
+console.log(result);*/
+
+/*function showPersons(person) {
+  console.log(person.position.toUppercase());
+}
+
+showPersons(people);
+
+people.forEach(function (person) {
+  console.log(person);
+});*/
+
+/*const ages = people.map(function (person) {
+  return person.age + 10;
+});
+
+const names = people.map(function (person) {
+  return `<h1>${person.name}</h1>`;
+});
+
+const newPeople = people.map(function (person) {
+  return {
+    firstName: person.name.toUpperCase(),
+    oldAge: person.age + 10,
+  };
+});*/
+
+/*const people = [
+  { name: "sinan", age: 20, position: "menager", id: 1, salary: 200 },
+  { name: "edin", age: 21, position: "direktor", id: 2, salary: 300 },
+  { name: "tare", age: 22, position: "major", id: 3, salary: 400 },
+];
+
+const personFind = people.find(function (person) {
+  return person.id === 3;
+});
+
+const personFilter = people.filter(function (person) {
+  return person.id === 3;
+});
+
+const totalDaily = people.reduce(function (acc, curr) {
+  acc += curr.salary;
+  return acc;
+}, 0);
+
+console.log(totalDaily);*/
+
+const date = new Date();
+
+let month = date.getMonth();
+let day = date.getDay();
+
+console.log(month + 1);
+console.log(day + 1);
