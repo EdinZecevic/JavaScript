@@ -10,7 +10,7 @@ const items = document.getElementsByTagName("li");
 const betterItems = [...items];
 
 /*betterItems.forEach(function (item) {
-  console.log(item);
+  //.log(item);
 });*/
 
 /*const listItems = document.getElementsByClassName("special");
@@ -61,7 +61,7 @@ if (result) {
   console.log("hello world");
 } else {
   console.log("there is no any world");
-}*/
+}
 
 /*const result = document.querySelector("#result");
 
@@ -81,7 +81,7 @@ heading.classList.add("blue");*/
 
 /*const heading = document.createElement("h1");
 heading.innerText = `i am dynamic heading`;
-document.body.prepend(heading);*/
+document.body.prepend(heading);
 
 //const result = document.querySelector("#result");
 //result.remove();
@@ -100,14 +100,14 @@ const ul = document.createElement("ul");
 ul.innerHTML = `<li class="item">${randomWar}</li>
                 <li>list item</li>`;
 
-document.body.appendChild(ul);*/
+document.body.appendChild(ul);
 
 /*const random = document.querySelector(".random");
 random.style.backgroundColor = "blue";
 random.style.color = "white";
 random.size = "3 rem";
 
-random.classList.add("title");*/
+random.classList.add("title");
 
 /*const btn = document.querySelector(".btn");
 const heading = document.querySelector("h2");
@@ -143,7 +143,7 @@ btn.addEventListener("mouseleave", function () {
   console.log("down");
 });*/
 
-const heading = document.querySelector("h1");
+/*const heading = document.querySelector("h1");
 const btn = document.querySelector(".btn");
 
 heading.addEventListener("click", function () {
@@ -153,3 +153,75 @@ heading.addEventListener("click", function () {
 btn.addEventListener("click", function (event) {
   event.currentTarget.classList.add("a");
 });
+
+const btns = document.querySelectorAll(".btn");
+
+btns.forEach(function (btn) {
+  btn.addEventListener("click", function (e) {
+    //console.log(e.currentTarget);
+    //e.currentTarget.style.color = "green";
+    console.log(e.target);
+    e.target.style.color = "green";
+  });
+});
+
+const container = document.querySelector(".container");
+const list = document.querySelector(".list-items");
+
+function showBubling(e) {
+  console.log("current target", e.currentTarget);
+  console.log("target", e.target);
+}
+
+list.addEventListener("click", showBubling);
+container.addEventListener("click", showBubling);
+
+const container = document.querySelector(".container");
+const btn = document.querySelector(".btn");
+const heading = document.querySelector(".heading");
+
+function sayHello() {
+  console.log("hello");
+}
+
+btn.addEventListener("click", function () {
+  const element = document.createElement("h1");
+  element.classList.add("link");
+  element.textContent = "The new text for h1";
+  container.appendChild(element);
+});
+
+heading.addEventListener("click", sayHello);
+
+const form = document.getElementById("form");
+const name = document.getElementById("name");
+const password = document.getElementById("password");
+
+form.addEventListener("submit", function (e) {
+  e.preventDefault();
+  console.log("form submitetd");
+  console.log(name.value);
+  console.log(password.value);
+});
+
+localStorage.setItem("name", "john");
+sessionStorage.setItem("name", "john");
+
+const friends = ["Sinan", "Sakic", "Jasar"];
+
+localStorage.setItem("friends", JSON.stringify(friends));
+
+const values = JSON.parse(localStorage.getItem("friends"));
+
+console.log(values[1]);*/
+
+let fruits;
+if (localStorage.getItem("fruits")) {
+  fruits = JSON.parse(localStorage.getItem("fruits"));
+} else {
+  fruits = [];
+}
+
+fruits.push("banana");
+fruits.push("apple");
+localStorage.setItem("fruits", JSON.stringify(fruits));
