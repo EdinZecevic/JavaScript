@@ -128,7 +128,7 @@ function changecolors() {
 
 btn.addEventListener("click", changecolors);*/
 
-const heading = document.querySelector("h2");
+/*const heading = document.querySelector("h2");
 const btn = document.querySelector(".btn");
 
 btn.addEventListener("click", function () {
@@ -141,4 +141,15 @@ btn.addEventListener("mouseenter", function () {
 
 btn.addEventListener("mouseleave", function () {
   console.log("down");
+});*/
+
+const heading = document.querySelector("h1");
+const btn = document.querySelector(".btn");
+
+heading.addEventListener("click", function () {
+  heading.classList.add("a");
+});
+
+btn.addEventListener("click", function (event) {
+  event.currentTarget.classList.add("a");
 });
